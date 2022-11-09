@@ -9,4 +9,12 @@ public class Boss extends GameEntity{
     public void setOrushie(Weapon orushie) {
         this.orushie = orushie;
     }
+    public String print(){
+        return getLife() + " " + getDamage() + " " +
+                getOrushie().getType() + " " + getOrushie().getClass();
+    }
+
+    public String printInfo(){
+        return getLife() + " " + getDamage() + " " + getOrushie().getType() + " " + getOrushie().getName();
+    }
 }

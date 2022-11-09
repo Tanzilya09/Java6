@@ -17,4 +17,8 @@ public class Weapon {
     public String getName() {
         return name;
     }
+    public Weapon(String type, String name) {
+        this.type= type;
+        this.name = name;
+    }
 }
